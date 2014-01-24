@@ -1,14 +1,14 @@
-module.exports = function(grunt) {
+я╗┐module.exports = function(grunt) {
 
-    // 1. ┼┌╧╟╧╟╩ ╩╘█эс ▀╟▌╔ ╟сух╟у.
+    // 1. ╪е╪╣╪п╪з╪п╪з╪к ╪к╪┤╪║┘К┘Д ┘Г╪з┘Б╪й ╪з┘Д┘Е┘З╪з┘Е.
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
         concat: {
 			dist: {
 				src: [
-					'js/libs/*.js', // ╟су▀╩╚╟╩
-					'js/global.js'  // ╟сус▌ ╟с╨э ▐уф╟ ╚▀╩╟╚╩х
+					'js/libs/*.js', // ╪з┘Д┘Е┘Г╪к╪и╪з╪к
+					'js/global.js'  // ╪з┘Д┘Е┘Д┘Б ╪з┘Д╪░┘К ┘В┘Е┘Ж╪з ╪и┘Г╪к╪з╪и╪к┘З
 				],
 				dest: 'js/build/production.js',
 			}
@@ -16,10 +16,10 @@ module.exports = function(grunt) {
 
     });
 
-    // 2. ├╙у╟┴ ╟с═╥у ╟с╩э ф╙╩╬╧ух╟.
+    // 2. ╪г╪│┘Е╪з╪б ╪з┘Д╪н╪▓┘Е ╪з┘Д╪к┘К ┘Ж╪│╪к╪о╪п┘Е┘З╪з.
     grunt.loadNpmTasks('grunt-contrib-concat');
 
-    // 3. ▐╟╞у╔ ╟сух╟у ╟с╩э э╩у ╩╘█эсх╟ ┌ф╧ ╩ф▌э╨ ├у╤ grunt.
+    // 3. ┘В╪з╪ж┘Е╪й ╪з┘Д┘Е┘З╪з┘Е ╪з┘Д╪к┘К ┘К╪к┘Е ╪к╪┤╪║┘К┘Д┘З╪з ╪╣┘Ж╪п ╪к┘Ж┘Б┘К╪░ ╪г┘Е╪▒ grunt.
     grunt.registerTask('default', ['concat']);
 
 };
