@@ -9833,6 +9833,7 @@ window['Slip'] = (function(){
 })();
 
 
+// Our own JS
 $(function() {
 	alert('jQuery Loaded');
 });
